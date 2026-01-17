@@ -2,7 +2,7 @@ name: Sync Fork
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # 每6小时同步一次
+    - cron: "0 */6 * * *" # 每6小时同步一次
   workflow_dispatch:
 
 jobs:
@@ -13,6 +13,6 @@ jobs:
         uses: tgymnich/fork-sync@v1.7
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          owner: anuraghazra  
-          repo: github-readme-stats 
-          branch: main  
+          owner: anuraghazra
+          repo: github-readme-stats
+          branch: main
